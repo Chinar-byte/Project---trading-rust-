@@ -4,7 +4,7 @@ use std::io::BufReader;
 use std::process::ExitCode;
 use std::time::Instant;
 
-use ferrum_exchange::{Event, MatchingEngine, NewOrder, Side, replay_reader};
+use mock_test_proj::{replay_reader, Event, MatchingEngine, NewOrder, Side};
 
 fn main() -> ExitCode {
     match run() {
@@ -23,7 +23,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
         Some("replay") => {
             let path = args
                 .next()
-                .ok_or("usage: ferrum-exchange replay <orders.csv>")?;
+                .ok_or("usage: mock-test-proj replay <orders.csv>")?;
             replay(&path)?;
         }
         Some("benchmark") => {
@@ -50,7 +50,7 @@ fn demo() {
         NewOrder::limit(4, Side::Sell, 10_001, 7, 4),
         NewOrder::market(5, Side::Buy, 13, 5),
     ];
-    println!("FERRUM EXCHANGE — deterministic matching demo\n");
+    println!("MOCK TEST PROJ — deterministic matching demo\n");
     for order in orders {
         println!(
             "submit #{:<2} {:<4} qty={:<3} price={:?}",

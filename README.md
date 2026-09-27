@@ -1,4 +1,4 @@
-# Ferrum Exchange
+# Mock Test Proj
 
 A deterministic limit-order-book simulator written in Rust. It demonstrates the engineering concerns that matter in electronic trading: correctness, predictable data representation, price-time priority, pre-trade risk, replayability, and performance measurement.
 

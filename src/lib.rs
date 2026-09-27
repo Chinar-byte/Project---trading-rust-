@@ -1,4 +1,4 @@
-//! Ferrum Exchange: a small, deterministic exchange simulator.
+//! Mock Test Proj: a small, deterministic exchange simulator.
 //!
 //! Prices are represented as integer ticks and quantities as integers. The hot
 //! path therefore contains no floating-point arithmetic and the same input

@@ -1,4 +1,4 @@
-use ferrum_exchange::{Event, MatchingEngine, NewOrder, Price, Side};
+use mock_test_proj::{Event, MatchingEngine, NewOrder, Price, Side};
 
 #[test]
 fn end_to_end_exchange_flow_is_deterministic() {

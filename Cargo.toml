@@ -1,8 +1,8 @@
 [package]
-name = "ferrum-exchange"
+name = "mock-test-proj"
 version = "0.1.0"
 edition = "2024"
-description = "A dependency-free limit order book, risk gate, and deterministic exchange simulator"
+description = "A dependency-free Rust test project"
 license = "MIT"
 
 [profile.release]
